@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #cfe1b9;
+    --secondary-color: #b5c99a;
+    --tertiary-color: #87986a;
+    --outline-color: #333d29;
+    --text-color: #5e503f;
+
+    --space-small: 8px;
+    --space-medium: 16px;
+    --space-large: 24px;
+
+    --font-small: 14px;
+    --font-medium: 16px;
+    --font-large: 24px;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: var(--font-medium);
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: var(--font-large);
+    margin-bottom: var(--space-medium);
+}
+
+h2 {
+    font-size: var(--font-medium);
+    margin-bottom: var(--space-small);
+}
+
+h3 {
+    font-size: var(--font-small);
+    margin-bottom: var(--space-small);
+}
+
+p {
+    margin-bottom: var(--space-small);
+    line-height: 1.5;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: var(--space-medium);
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: var(--space-medium);
+}
+
+nav a:hover {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+nav a:focus {
+    outline: 2px solid var(--outline-color);
+    outline-offset: 2px;
+}
