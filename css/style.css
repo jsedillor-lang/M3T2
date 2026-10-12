@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #cfe1b9;
-    --secondary-color: #b5c99a;
-    --tertiary-color: #87986a;
-    --outline-color: #333d29;
-    --text-color: #5e503f;
+    --primary-color: #fefae0;
+    --secondary-color: #6c6338;
+    --tertiary-color: #635a2d;
+    --outline-color: #582f0e;
+    --text-color: #fefae0;
 
     --space-small: 8px;
     --space-medium: 16px;
@@ -11,7 +11,7 @@
 
     --font-small: 14px;
     --font-medium: 16px;
-    --font-large: 24px;
+    --font-large: 36px;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 
 h1 {
     font-size: var(--font-large);
-    margin-bottom: var(--space-medium);
+    margin-bottom: var(--space-small);
 }
 
 h2 {
@@ -57,10 +57,37 @@ nav a {
 
 nav a:hover {
     background-color: var(--tertiary-color);
+    text-color: var(--primary-color);
     color: var(--primary-color);
 }
 
 nav a:focus {
     outline: 2px solid var(--outline-color);
+    text-color: var(--primary-color);
     outline-offset: 2px;
+}
+
+.card {
+    background-color: #928660;
+    padding: 24px;
+    margin: 16px;
+    border: 1px solid var(--primary-color);
+}
+
+hr {
+    border: none;
+    border-top: 3px solid var(--text-color);
+}
+
+.button {
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: var(--space-medium);
+    text-align: center;
 }
